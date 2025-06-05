@@ -6,37 +6,50 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-    int torre, bispo, rainha;
-    int i;
-    int direita, esquerda, cima;
+    int i = 1;
+    int peca;
 
-    // Implementação de Movimentação do Bispo
-    // Mover o Bispo 5 casas para direira e para cima
-    while (i < 5) {
-        printf("Mova o Bispo para a direira\n"); //Para se mover em diagonal precisa andar 5 casas para a direita e 5 casas para cima
-        printf("Mova o Bispo para cima\n", i);
-        i++; //incremento
-    }
+    //Entrada de dados do jogo:
+    printf("*** Jogo Xadrez!!! ***:\n");
+    printf("1.Mover a Torre\n");
+    printf("2.Mover o Bispo\n");
+    printf("3.Mover a Rainha\n");
+    printf("Escolha uma peça: "); 
+    scanf("%d", &peca); 
+
+    // Implementando a Movimentação das Peças
+    switch (peca)
+    {
 
     // Implementação de Movimentação da Torre
+    case 1:
+        printf("Você escolheu a Torre!\n"); 
     // Mover a Torre 5 casas para a direita
-    for (i = 0; i < 5; i++) //iniciação, condição, incremento
+    for (i; i <= 5; i++) //iniciação, condição, incremento
     { 
-        printf("Mova a Torre para a direita\n");
+        printf("Mova para a direita\n");
     }
+    break;
 
-    // Implementação de Movimentação da Rainha
-    // Mover a Rainha 8 casas para a esquerda
-
-    do {
-
-        printf("Mova a Rainha para a esquerda\n");
+    case 2:
+    printf("Você escolheu o Bispo!\n"); 
+    // Mover o Bispo 5 casas para direira e 5 casas para cima
+    while (i <= 5) {
+        printf("Mova para a direita e para cima\n"); //Para se mover em diagonal precisa andar 5 casas para a direita e 5 casas para cima
         i++; //incremento
     }
-    
-    while (i == 8);
-    
+    break;
 
+    // Implementação do Movimento da Rainha
+    case 3:
+    printf("Você escolheu a Rainha!\n"); 
+    // Mover a Rainha 8 casas para a esquerda
+    do
+    {
+        printf("Mova para a esquerda\n");
+        i++; //incremento
+    } while (i <= 8);
+    break;
+    
     return 0;
 }
