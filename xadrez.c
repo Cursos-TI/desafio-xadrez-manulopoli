@@ -50,6 +50,7 @@ int main() {
         i++; //incremento
     } while (i <= 8);
     break;
+    }
     
     return 0;
 }
