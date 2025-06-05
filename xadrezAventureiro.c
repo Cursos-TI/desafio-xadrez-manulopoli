@@ -62,9 +62,9 @@ int main() {
     while (i <= 1) {
         for(int j = 0; j < 2; j++)
         {
-            printf("Mova para baixo\n"); // Mover para cima 2 casas
+            printf("Mova para baixo\n"); // Mover 2 casas para cima
         }
-        printf("Mova para a esquerda\n"); // Mover para cima 2 casas 
+        printf("Mova para a esquerda\n"); // Mover 1 casa para a esquerda 
         i++;
     }
     break;
